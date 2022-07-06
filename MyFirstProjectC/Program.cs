@@ -94,13 +94,56 @@
 //    else Console.WriteLine(a + " " + c + " " + b);
 //else Console.WriteLine(a + " " + b + " " + c);
 // 4
+//Console.WriteLine("A =");
+//double a = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("B =");
+//double b = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("C =");
+//double c = Convert.ToDouble(Console.ReadLine());
+//string x1 = Convert.ToString((-b + Math.Sqrt(b * b - 4 * a * c)) / (2 * a));
+//string x2 = Convert.ToString((-b - Math.Sqrt(b * b - 4 * a * c)) / (2 * a));
+//Console.WriteLine("x1 = " + x1);
+//Console.WriteLine("x2 = " + x2);
+
+
+// 9th lesson
+// 1
+//Console.WriteLine("Enter number");
+//int num = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine((0 < num && num < 10 || 20 < num && num < 30 || 40 < num && num < 50) ? true : false);
+// 2
+//Console.WriteLine("A =");
+//double a = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("B =");
+//double b = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("C =");
+//double c = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine(((a + b) > c && (a + c) > b && (b + c) > a) ? true : false);
+// 3
 Console.WriteLine("A =");
 double a = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("B =");
 double b = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("C =");
 double c = Convert.ToDouble(Console.ReadLine());
-string x1 = Convert.ToString((-b + Math.Sqrt(b * b - 4 * a * c)) / (2 * a));
-string x2 = Convert.ToString((-b - Math.Sqrt(b * b - 4 * a * c)) / (2 * a));
-Console.WriteLine("x1 = " + x1);
-Console.WriteLine("x2 = " + x2);
+double x, y, big;
+if (a > b && a > c)
+{
+    x = b;
+    y = c;
+    big = a;
+}
+else if (b > a && b > c)
+{
+    x = a;
+    y = c;
+    big = b;
+}
+else
+{
+    x = a;
+    y = b;
+    big = c;
+}
+if (x > y) Console.WriteLine(big + " " + x + " " + y);
+else Console.WriteLine(big + " " + y + " " + x);
