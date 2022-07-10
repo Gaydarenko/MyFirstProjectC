@@ -150,103 +150,167 @@
 
 
 // 10th lesson
-Console.WriteLine("Enter two-digit number");
-string res = "";
-int number = Convert.ToInt32(Console.ReadLine());
-string num_str = "";
-if (number < 20)
-    switch (number)
-    {
-        case 10:
-            num_str = "десять";
-            break;
-        case 11:
-            num_str = "одинадцать";
-            break;
-        case 12:
-            num_str = "двенадцать";
-            break;
-        case 13:
-            num_str = "тринадцать";
-            break;
-        case 14:
-            num_str = "четырнадцать";
-            break;
-        case 15:
-            num_str = "пятнадцать";
-            break;
-        case 16:
-            num_str = "шестнадцать";
-            break;
-        case 17:
-            num_str = "семнадцать";
-            break;
-        case 18:
-            num_str = "восемнадцать";
-            break;
-        case 19:
-            num_str = "девятнадцать";
-            break;
-    }
-else
-    switch (number % 10)
-    {
-        case 1:
-            num_str = "один";
-            break;
-        case 2:
-            num_str = "два";
-            break;
-        case 3:
-            num_str = "три";
-            break;
-        case 4:
-            num_str = "четыре";
-            break;
-        case 5:
-            num_str = "пять";
-            break;
-        case 6:
-            num_str = "шесть";
-            break;
-        case 7:
-            num_str = "семь";
-            break;
-        case 8:
-            num_str = "восемь";
-            break;
-        case 9:
-            num_str = "девять";
-            break;
-    
-    }
-string dec_str = "";
-int dec = number / 10;
-switch (dec)
-{
-    case 2:
-        dec_str = "Двадцать";
-        break;
-    case 3:
-        dec_str = "Тридцать";
-        break;
-    case 4:
-        dec_str = "Сорок";
-        break;
-    case 5:
-        dec_str = "Пятьдесят";
-        break;
-    case 6:
-        dec_str = "Шестьдесят";
-        break;
-    case 7:
-        dec_str = "Семьдесят";
-        break;
-    case 8:
-        dec_str = "Восемьдесят";
-        break;
-    case 9:
-        dec_str = "Девяносто";
-        break;
-}
-Console.WriteLine(dec_str + " " + num_str);
+//Console.WriteLine("Enter two-digit number");
+//string res = "";
+//int number = Convert.ToInt32(Console.ReadLine());
+//string num_str = "";
+//if (number < 20)
+//    switch (number)
+//    {
+//        case 10:
+//            num_str = "десять";
+//            break;
+//        case 11:
+//            num_str = "одинадцать";
+//            break;
+//        case 12:
+//            num_str = "двенадцать";
+//            break;
+//        case 13:
+//            num_str = "тринадцать";
+//            break;
+//        case 14:
+//            num_str = "четырнадцать";
+//            break;
+//        case 15:
+//            num_str = "пятнадцать";
+//            break;
+//        case 16:
+//            num_str = "шестнадцать";
+//            break;
+//        case 17:
+//            num_str = "семнадцать";
+//            break;
+//        case 18:
+//            num_str = "восемнадцать";
+//            break;
+//        case 19:
+//            num_str = "девятнадцать";
+//            break;
+//    }
+//else
+//    switch (number % 10)
+//    {
+//        case 1:
+//            num_str = "один";
+//            break;
+//        case 2:
+//            num_str = "два";
+//            break;
+//        case 3:
+//            num_str = "три";
+//            break;
+//        case 4:
+//            num_str = "четыре";
+//            break;
+//        case 5:
+//            num_str = "пять";
+//            break;
+//        case 6:
+//            num_str = "шесть";
+//            break;
+//        case 7:
+//            num_str = "семь";
+//            break;
+//        case 8:
+//            num_str = "восемь";
+//            break;
+//        case 9:
+//            num_str = "девять";
+//            break;
+
+//    }
+//string dec_str = "";
+//int dec = number / 10;
+//switch (dec)
+//{
+//    case 2:
+//        dec_str = "Двадцать";
+//        break;
+//    case 3:
+//        dec_str = "Тридцать";
+//        break;
+//    case 4:
+//        dec_str = "Сорок";
+//        break;
+//    case 5:
+//        dec_str = "Пятьдесят";
+//        break;
+//    case 6:
+//        dec_str = "Шестьдесят";
+//        break;
+//    case 7:
+//        dec_str = "Семьдесят";
+//        break;
+//    case 8:
+//        dec_str = "Восемьдесят";
+//        break;
+//    case 9:
+//        dec_str = "Девяносто";
+//        break;
+//}
+//Console.WriteLine(dec_str + " " + num_str);
+
+
+// 11th lesson
+// 1
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter B =");
+//int b = Convert.ToInt32(Console.ReadLine());
+//int res;
+//if (b == 0)
+//    res = 1;
+//else
+//{
+//    res = a;
+//        for (int i = 2; i <= b; i++)
+//        {
+//            res *= a;
+//        }
+//}    
+//Console.WriteLine(res);
+
+// 2
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//for (int i = a; i <= 1000; i+=a)
+//    Console.WriteLine(i);
+
+// 3
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//int res = 0;
+//for (int i = 0; i * i < a; i++)
+//    res++;
+//Console.WriteLine(res);
+
+// 4
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter B =");
+//int b = Convert.ToInt32(Console.ReadLine());
+//int start;
+//if (a % 7 == 0) start = a;
+//else start = a / 7 * 7 + 7;
+//int sum = 0;
+//for (int i = start; i <= b; i += 7) sum += i;
+//Console.WriteLine(sum);
+
+// 5
+//Console.WriteLine("Enter number");
+//int num = Convert.ToInt32(Console.ReadLine());
+//int a = 1;
+//int b = 1;
+//int c;
+//if (num < 3) Console.WriteLine(b);
+//else
+//{
+//    for (int i = 3; i <= num; i++)
+//        {
+//        c = a;
+//        a = b;
+//        b = a + c;
+//        }
+//    Console.WriteLine(b);
+//}
