@@ -314,3 +314,77 @@
 //        }
 //    Console.WriteLine(b);
 //}
+
+
+// 12th lesson
+// 1
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//int div = a;
+//while (div > 0)
+//{
+//    div--;
+//    if (a % div == 0)
+//    {
+//        Console.WriteLine(div);
+//        div = 0;
+//    }
+
+//}
+
+// 2
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter B =");
+//int b = Convert.ToInt32(Console.ReadLine());
+//int c;
+//if (a < b)
+//{
+//    c = a;
+//    a = b;
+//    b = c;
+//}
+//while (b != 0)
+//{
+//    c = b;
+//    b = a % b;
+//    a = c;
+//}
+//Console.WriteLine(a);
+
+// 3
+//Console.WriteLine("Enter number:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//int count = 0;
+//while (num != 0)
+//{
+//    int tmp = num % 10;
+//    if (tmp % 2 ==0) count++;
+//    num /= 10;
+//}
+//Console.WriteLine(count);
+
+// 4
+//Console.WriteLine("Enter number:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//string res = "";
+//while (num != 0)
+//{
+//    res += Convert.ToString(num % 10);
+//    num = num / 10;
+//}
+//Console.WriteLine(res);
+
+// 5
+Console.WriteLine("Enter number:");
+int num = Convert.ToInt32(Console.ReadLine());
+int a = 0;
+int b = num;
+int mid = (b + a) / 2;
+while (mid * mid * mid != num)
+{
+    if (mid * mid * mid > num) b = mid;
+    else a = mid; 
+    mid = (b + a) / 2;
+}
+Console.WriteLine(mid);
