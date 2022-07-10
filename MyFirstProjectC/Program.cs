@@ -376,15 +376,67 @@
 //Console.WriteLine(res);
 
 // 5
-Console.WriteLine("Enter number:");
-int num = Convert.ToInt32(Console.ReadLine());
-int a = 0;
-int b = num;
-int mid = (b + a) / 2;
-while (mid * mid * mid != num)
+//Console.WriteLine("Enter number:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//int a = 0;
+//int b = num;
+//int mid = (b + a) / 2;
+//while (mid * mid * mid != num)
+//{
+//    if (mid * mid * mid > num) b = mid;
+//    else a = mid; 
+//    mid = (b + a) / 2;
+//}
+//Console.WriteLine(mid);
+
+
+// 13th lesson
+// 1
+//string pass = "";
+//do
+//{
+//    Console.WriteLine("Enter password");
+//    pass = Console.ReadLine();
+//}
+//while (pass != "Pass123!");
+
+// 2
+//int num = 0;
+//int res = 0;
+//do
+//{
+//    Console.WriteLine("Enter number");
+//    num = Convert.ToInt32(Console.ReadLine());
+//    if (res < num) res = num;
+//}
+//while (num != 0);
+//Console.WriteLine(res);
+
+// 3
+//int num = 0;
+//int count = 0;
+//do
+//{
+//    Console.WriteLine("Enter number");
+//    num = Convert.ToInt32(Console.ReadLine());
+//    if (num != 0 &&(num % 3 == 0 ^ num % 7 == 0 ^ num % 11 == 0)) count++;
+//}
+//while (num != 0);
+//Console.WriteLine(count);
+
+// 4
+int num = 0;
+int pos = 0;
+int neg = 0;
+do
 {
-    if (mid * mid * mid > num) b = mid;
-    else a = mid; 
-    mid = (b + a) / 2;
+    Console.WriteLine("Enter number");
+    num = Convert.ToInt32(Console.ReadLine());
+    if (num == 0) ;
+    else if (num > 0) pos += num;
+    else neg += num;
 }
-Console.WriteLine(mid);
+while (num != 0);
+if (pos > -neg) Console.WriteLine("Сумма положительных больше");
+else if (pos < -neg) Console.WriteLine("Сумма негативных больше");
+else Console.WriteLine("Суммы положительных и негативных равны");
