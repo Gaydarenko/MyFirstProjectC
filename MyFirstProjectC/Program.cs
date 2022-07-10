@@ -120,30 +120,133 @@
 //double c = Convert.ToDouble(Console.ReadLine());
 //Console.WriteLine(((a + b) > c && (a + c) > b && (b + c) > a) ? true : false);
 // 3
-Console.WriteLine("A =");
-double a = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("B =");
-double b = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("C =");
-double c = Convert.ToDouble(Console.ReadLine());
-double x, y, big;
-if (a > b && a > c)
-{
-    x = b;
-    y = c;
-    big = a;
-}
-else if (b > a && b > c)
-{
-    x = a;
-    y = c;
-    big = b;
-}
+//Console.WriteLine("A =");
+//double a = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("B =");
+//double b = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("C =");
+//double c = Convert.ToDouble(Console.ReadLine());
+//double x, y, big;
+//if (a > b && a > c)
+//{
+//    x = b;
+//    y = c;
+//    big = a;
+//}
+//else if (b > a && b > c)
+//{
+//    x = a;
+//    y = c;
+//    big = b;
+//}
+//else
+//{
+//    x = a;
+//    y = b;
+//    big = c;
+//}
+//if (x > y) Console.WriteLine(big + " " + x + " " + y);
+//else Console.WriteLine(big + " " + y + " " + x);
+
+
+// 10th lesson
+Console.WriteLine("Enter two-digit number");
+string res = "";
+int number = Convert.ToInt32(Console.ReadLine());
+string num_str = "";
+if (number < 20)
+    switch (number)
+    {
+        case 10:
+            num_str = "десять";
+            break;
+        case 11:
+            num_str = "одинадцать";
+            break;
+        case 12:
+            num_str = "двенадцать";
+            break;
+        case 13:
+            num_str = "тринадцать";
+            break;
+        case 14:
+            num_str = "четырнадцать";
+            break;
+        case 15:
+            num_str = "пятнадцать";
+            break;
+        case 16:
+            num_str = "шестнадцать";
+            break;
+        case 17:
+            num_str = "семнадцать";
+            break;
+        case 18:
+            num_str = "восемнадцать";
+            break;
+        case 19:
+            num_str = "девятнадцать";
+            break;
+    }
 else
+    switch (number % 10)
+    {
+        case 1:
+            num_str = "один";
+            break;
+        case 2:
+            num_str = "два";
+            break;
+        case 3:
+            num_str = "три";
+            break;
+        case 4:
+            num_str = "четыре";
+            break;
+        case 5:
+            num_str = "пять";
+            break;
+        case 6:
+            num_str = "шесть";
+            break;
+        case 7:
+            num_str = "семь";
+            break;
+        case 8:
+            num_str = "восемь";
+            break;
+        case 9:
+            num_str = "девять";
+            break;
+    
+    }
+string dec_str = "";
+int dec = number / 10;
+switch (dec)
 {
-    x = a;
-    y = b;
-    big = c;
+    case 2:
+        dec_str = "Двадцать";
+        break;
+    case 3:
+        dec_str = "Тридцать";
+        break;
+    case 4:
+        dec_str = "Сорок";
+        break;
+    case 5:
+        dec_str = "Пятьдесят";
+        break;
+    case 6:
+        dec_str = "Шестьдесят";
+        break;
+    case 7:
+        dec_str = "Семьдесят";
+        break;
+    case 8:
+        dec_str = "Восемьдесят";
+        break;
+    case 9:
+        dec_str = "Девяносто";
+        break;
 }
-if (x > y) Console.WriteLine(big + " " + x + " " + y);
-else Console.WriteLine(big + " " + y + " " + x);
+Console.WriteLine(dec_str + " " + num_str);
