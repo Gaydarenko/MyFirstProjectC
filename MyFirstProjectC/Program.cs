@@ -425,18 +425,79 @@
 //Console.WriteLine(count);
 
 // 4
-int num = 0;
-int pos = 0;
-int neg = 0;
+//int num = 0;
+//int pos = 0;
+//int neg = 0;
+//do
+//{
+//    Console.WriteLine("Enter number");
+//    num = Convert.ToInt32(Console.ReadLine());
+//    if (num == 0) ;
+//    else if (num > 0) pos += num;
+//    else neg += num;
+//}
+//while (num != 0);
+//if (pos > -neg) Console.WriteLine("Сумма положительных больше");
+//else if (pos < -neg) Console.WriteLine("Сумма негативных больше");
+//else Console.WriteLine("Суммы положительных и негативных равны");
+
+
+// 14th lesson
+// 1
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//int sum = 0;
+//for (int i = 1; i <= a; i++)
+//{
+//    sum += i;
+//}
+//Console.WriteLine(sum);
+
+// 2
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter B =");
+//int b = Convert.ToInt32(Console.ReadLine());
+//int count = 0;
+//for (int i = a; i <= b; i++)
+//{
+//    bool flag = true;
+//    for (int j = 2; j < i; j++)
+//    {
+//        if (i % j == 0)
+//        {
+//            flag = false;
+//        }
+//    }
+//    if (flag)
+//    {
+//        count++;
+//    }
+//}
+//Console.WriteLine(count);
+
+//3
+Console.WriteLine("Enter A =");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter B =");
+int b = Convert.ToInt32(Console.ReadLine());
+string flag = "НЕТ";
 do
 {
-    Console.WriteLine("Enter number");
-    num = Convert.ToInt32(Console.ReadLine());
-    if (num == 0) ;
-    else if (num > 0) pos += num;
-    else neg += num;
+    int i = a % 10;
+    a /= 10;
+    int tmp = b;
+    do
+    {
+        int j = tmp % 10;
+        tmp /= 10;
+        if (i == j)
+        {
+            flag = "ДА";
+        }
+    }
+    while (tmp > 0);
+
 }
-while (num != 0);
-if (pos > -neg) Console.WriteLine("Сумма положительных больше");
-else if (pos < -neg) Console.WriteLine("Сумма негативных больше");
-else Console.WriteLine("Суммы положительных и негативных равны");
+while (a > 0);
+Console.WriteLine(flag);
