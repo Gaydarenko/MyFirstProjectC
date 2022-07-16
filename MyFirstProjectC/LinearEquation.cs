@@ -302,10 +302,10 @@ namespace MyFirstProjectC
             Console.WriteLine(res);
         }
     }
-    // 17th lesson 
+    // 17th & 18th lessons
     public static class ActionsWithArrays
     {
-        // 16th lesson
+        // 17th lesson
         public static int MinInArray(int[] nums)
         {
             int min = nums[0];
@@ -395,7 +395,7 @@ namespace MyFirstProjectC
             }
             return res;
         }
-        // 17th lesson
+        // 18th lesson
         public static int[] GenerateArray(int len, int start, int finish)
         {
             Random num = new Random();
