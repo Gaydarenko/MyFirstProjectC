@@ -536,4 +536,9 @@ using MyFirstProjectC;
 // in class ActionsWithArrays
 
 // 17th lesson
-ActionsWithArrays.TestBubbleSort();
+//ActionsWithArrays.TestBubbleSort();
+
+// 18th lesson
+//TwoDimensionalArrays.TestMinElement();
+TwoDimensionalArrays.TestMethods();
+
