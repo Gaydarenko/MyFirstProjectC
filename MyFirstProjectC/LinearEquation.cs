@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstProjectC
 {
+    // 16th lesson
     public static class LinearEquation
     {
         // 1
@@ -299,6 +300,99 @@ namespace MyFirstProjectC
             int b = ReadIntFromConsole();
             bool res = Compare(a, b);
             Console.WriteLine(res);
+        }
+    }
+    // 17th lesson 
+    public static class ActionsWithArrays
+    {
+        public static int MinInArray(int[] nums)
+        {
+            int min = nums[0];
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (min > nums[i])
+                {
+                    min = nums[i];
+                }
+            }
+            return min;
+        }
+        public static int MaxInArray(int[] nums)
+        {
+            int max = nums[0];
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (max < nums[i])
+                {
+                    max = nums[i];
+                }
+            }
+            return max;
+        }
+        public static int IndexMinInArray(int[] nums)
+        {
+            int ind_min = 0;
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (nums[ind_min] > nums[i])
+                {
+                    ind_min = i;
+                }
+            }
+            return ind_min;
+        }
+        public static int IndexMaxInArray(int[] nums)
+        {
+            int ind_max = 0;
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (nums[ind_max] < nums[i])
+                {
+                    ind_max = i;
+                }
+            }
+            return ind_max;
+        }
+        public static int SumNumbersWithOddInex(int[] nums)
+        {
+            int res = 0;
+            for (int i = 1; i < nums.Length; i+=2)
+            {
+                res += nums[i];
+            }
+            return res;
+        }
+        public static int[] ReverseArray(int[] nums)
+        {
+            int[] res = new int[nums.Length];
+            for (int i = 0; i < nums.Length; i++)
+                res[nums.Length - 1 - i] = nums[i];
+            return res;
+        }
+        public static int CountOdd(int[] nums)
+        {
+            int count = 0;
+            for (int i = 0; i < nums.Length; i++)
+                if (nums[i] % 2 == 0)
+                {
+                    count ++;
+                }
+            return count;
+        }
+        public static int[] ReverseHalfsArray(int[] nums)
+        {
+            int mid = nums.Length / 2 + 1;
+            int[] res = new int[nums.Length];
+            int j = 0;
+            for (int i = mid; i < nums.Length; i++)
+            {
+                res[j++] = nums[i];
+            }
+            for (int i = 0; i < mid; i++)
+            {
+                res[j++] = nums[i];
+            }
+            return res;
         }
     }
 }

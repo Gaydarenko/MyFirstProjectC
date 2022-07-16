@@ -504,7 +504,7 @@
 
 
 // 15th lesson
-using MyFirstProjectC;
+//using MyFirstProjectC;
 // 1
 //LinearEquation.SolveEquation();
 
@@ -531,3 +531,7 @@ using MyFirstProjectC;
 
 // 9
 //LinearEquation.CompareTwoNumbers();
+
+// 16th lesson
+// in class ActionsWithArrays
+
