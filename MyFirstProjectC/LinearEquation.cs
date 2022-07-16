@@ -72,34 +72,34 @@ namespace MyFirstProjectC
                 switch (number)
                 {
                     case 10:
-                        num_str = "десять";
+                        num_str = "Десять";
                         break;
                     case 11:
-                        num_str = "одинадцать";
+                        num_str = "Одинадцать";
                         break;
                     case 12:
-                        num_str = "двенадцать";
+                        num_str = "Двенадцать";
                         break;
                     case 13:
-                        num_str = "тринадцать";
+                        num_str = "Тринадцать";
                         break;
                     case 14:
-                        num_str = "четырнадцать";
+                        num_str = "Четырнадцать";
                         break;
                     case 15:
-                        num_str = "пятнадцать";
+                        num_str = "Пятнадцать";
                         break;
                     case 16:
-                        num_str = "шестнадцать";
+                        num_str = "Шестнадцать";
                         break;
                     case 17:
-                        num_str = "семнадцать";
+                        num_str = "Семнадцать";
                         break;
                     case 18:
-                        num_str = "восемнадцать";
+                        num_str = "Восемнадцать";
                         break;
                     case 19:
-                        num_str = "девятнадцать";
+                        num_str = "Девятнадцать";
                         break;
                 }
             else
@@ -163,7 +163,7 @@ namespace MyFirstProjectC
                     dec_str = "Девяносто";
                     break;
             }
-            string res = dec_str + " " + num_str;
+            string res = $"{dec_str} " + num_str;
             return res;
         }
         public static void GetStringFromDigit()
