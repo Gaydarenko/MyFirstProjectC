@@ -305,6 +305,7 @@ namespace MyFirstProjectC
     // 17th lesson 
     public static class ActionsWithArrays
     {
+        // 16th lesson
         public static int MinInArray(int[] nums)
         {
             int min = nums[0];
@@ -356,7 +357,7 @@ namespace MyFirstProjectC
         public static int SumNumbersWithOddInex(int[] nums)
         {
             int res = 0;
-            for (int i = 1; i < nums.Length; i+=2)
+            for (int i = 1; i < nums.Length; i += 2)
             {
                 res += nums[i];
             }
@@ -375,7 +376,7 @@ namespace MyFirstProjectC
             for (int i = 0; i < nums.Length; i++)
                 if (nums[i] % 2 == 0)
                 {
-                    count ++;
+                    count++;
                 }
             return count;
         }
@@ -393,6 +394,52 @@ namespace MyFirstProjectC
                 res[j++] = nums[i];
             }
             return res;
+        }
+        // 17th lesson
+        public static int[] GenerateArray(int len, int start, int finish)
+        {
+            Random num = new Random();
+            int[] nums = new int[len];
+            for (int i = 0; i < len; i++)
+            {
+                nums[i] = num.Next(start, finish + 1);
+            }
+            return nums;
+        }
+        public static void WriteArrayInLine(int[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.Write($"{nums[i]} ");
+            }
+            Console.WriteLine();
+        }
+        public static int[] BubbleSort(int[] nums)
+        {
+            int finish = nums.Length-1;
+            while (finish > 0)
+            {
+                for (int i = 0; i < finish; i++)
+                {
+                    if (nums[i] > nums[i+1])
+                    {
+                        int tmp = nums[i];
+                        nums[i] = nums[i+1];
+                        nums[i+1] = tmp;
+                    }
+                }
+                finish--;
+            }
+            return nums;
+        }
+        public static void TestBubbleSort()
+        {
+            int[] nums = GenerateArray(6, -100, 100);
+            Console.Write("Source: ");
+            WriteArrayInLine(nums);
+            BubbleSort(nums);
+            Console.Write("Result: ");
+            WriteArrayInLine(nums);
         }
     }
 }

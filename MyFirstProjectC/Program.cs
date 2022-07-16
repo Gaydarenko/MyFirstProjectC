@@ -504,7 +504,7 @@
 
 
 // 15th lesson
-//using MyFirstProjectC;
+using MyFirstProjectC;
 // 1
 //LinearEquation.SolveEquation();
 
@@ -535,3 +535,5 @@
 // 16th lesson
 // in class ActionsWithArrays
 
+// 17th lesson
+ActionsWithArrays.TestBubbleSort();
