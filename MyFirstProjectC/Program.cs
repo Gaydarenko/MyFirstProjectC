@@ -477,27 +477,57 @@
 //Console.WriteLine(count);
 
 //3
-Console.WriteLine("Enter A =");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter B =");
-int b = Convert.ToInt32(Console.ReadLine());
-string flag = "НЕТ";
-do
-{
-    int i = a % 10;
-    a /= 10;
-    int tmp = b;
-    do
-    {
-        int j = tmp % 10;
-        tmp /= 10;
-        if (i == j)
-        {
-            flag = "ДА";
-        }
-    }
-    while (tmp > 0);
+//Console.WriteLine("Enter A =");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter B =");
+//int b = Convert.ToInt32(Console.ReadLine());
+//string flag = "НЕТ";
+//do
+//{
+//    int i = a % 10;
+//    a /= 10;
+//    int tmp = b;
+//    do
+//    {
+//        int j = tmp % 10;
+//        tmp /= 10;
+//        if (i == j)
+//        {
+//            flag = "ДА";
+//        }
+//    }
+//    while (tmp > 0);
 
-}
-while (a > 0);
-Console.WriteLine(flag);
+//}
+//while (a > 0);
+//Console.WriteLine(flag);
+
+
+// 15th lesson
+using MyFirstProjectC;
+// 1
+//LinearEquation.SolveEquation();
+
+// 2
+//LinearEquation.SolveSumMultDif();
+
+// 3
+//LinearEquation.GetStringFromDigit();
+
+// 4
+//LinearEquation.CheckNumInFIXRanges();
+
+// 5
+//LinearEquation.SolveRangesSum();
+
+// 6
+//LinearEquation.GetFibonachiNum();
+
+// 7
+//LinearEquation.GetCountOdd();
+
+// 8
+//LinearEquation.GetMirrowNumber();
+
+// 9
+//LinearEquation.CompareTwoNumbers();
