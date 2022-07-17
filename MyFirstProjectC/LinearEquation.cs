@@ -26,6 +26,10 @@ namespace MyFirstProjectC
         }
         public static int FindX(int a, int b, int c)
         {
+            if (a == 0)
+            {
+                throw new ArgumentException("A не может быть равным 0!");
+            }
             return (c - b) / a;
         }
         public static void WriteIntToConsole(int res)
@@ -67,6 +71,10 @@ namespace MyFirstProjectC
         // 3
         public static string ConvertTwoDigitNumberToString(int number)
         {
+            if (number < 10 ^ number > 99)
+            {
+                throw new ArgumentOutOfRangeException("Число должно быть в диапазоне от 10 до 99");
+            }
             string num_str = "";
             if (number < 20)
                 switch (number)
@@ -181,6 +189,10 @@ namespace MyFirstProjectC
         // 5
         public static int FindRangesSum(int a, int b)
         {
+            if (a < 0)
+            {
+                throw new ArgumentOutOfRangeException("Number should be greater 0");
+            }
             int start = FindStartNumber(a, 7);
             int sum = 0;
             for (int i = start; i <= b; i += 7)
@@ -212,6 +224,10 @@ namespace MyFirstProjectC
         // 6
         public static int FindFibonachiNum(int num)
         {
+            if (num < 1)
+            {
+                throw new ArgumentOutOfRangeException("Number should be greater or equal 1");
+            }
             int a = 1;
             int b = 1;
             int c;

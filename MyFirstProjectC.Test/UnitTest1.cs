@@ -100,5 +100,29 @@ namespace MyFirstProjectC.Test
             Assert.That(actual, Is.EqualTo(expect));
         }
 
+        [TestCase(0, 1, 6)]
+        public void FindXTest_WhenAIsZero_ShouldArgumentExeption(int a, int b, int c)
+        {
+            Assert.Throws<ArgumentException>(() => LinearEquation.FindX(a, b, c));
+        }
+        [TestCase(7)]
+        [TestCase(777)]
+        public static void ConvertTwoDigitNumberToStringTest_WhenNymNotTwoDigit_ShouldArgumentOutOfRangeException(int num)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(()=>LinearEquation.ConvertTwoDigitNumberToString(num));
+        }
+        [TestCase(-2, 6)]
+        [TestCase(-2, -6)]
+        [TestCase(-1,0)]
+        public static void FindRangesSumTest_WhenAOutOfRange_ShouldArgumentOutOfRangeException(int a, int b)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => LinearEquation.FindRangesSum(a, b));
+        }
+        [TestCase(-1)]
+        [TestCase(0)]
+        public static void FindFibonachiNumTest_WhenNumLess1_ShouldArgumentOutOfRangeException(int num)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(()=>LinearEquation.FindFibonachiNum(num));
+        }
     }
 }
