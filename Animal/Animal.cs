@@ -18,7 +18,7 @@ namespace MyFirstProjectC
                 _kind = value;
             }
         }
-        private string _kind;
+        private string? _kind;
         public string RequiredBiom { 
             get
             {
